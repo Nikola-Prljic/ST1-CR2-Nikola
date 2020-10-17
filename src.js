@@ -1,15 +1,23 @@
 
 
 function mylogic() {
-    //var message;
-    //message = document.getElementById("p1"); //nicht fertig ausgabe feld einfügen
-    //message.innerHTML = "";
+    
     
     
     var a = document.getElementById("in").value;
+    try {
+        if(a == "")  throw  "Input is Empty";
+       if( isNaN(a)) throw "Not a number";
+       if(a > 10)   throw "Input is too high";
+        if(a == 0)   throw  "0 0*1=0";
+        if(a < 0)   throw  "Input is to low";
+    }
+   catch(err) {
+       alert(err);
+       return false;
+   }
+   
     
-
-
     var number = a;
 
     var tbl = document.getElementById("myTable");
@@ -38,6 +46,7 @@ function mylogic() {
     console.log(i);
     
 }
+
 
 function reload(){
     var container = document.getElementById("myTable");
