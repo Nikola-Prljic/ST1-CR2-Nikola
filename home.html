@@ -42,7 +42,6 @@
         <div class="hero container text-center border bg-light">
             <h1>How it works!</h1>
             <p>Put in a number 1-10 and click on enter.</p>
-            <p>Click reset to clear the table.</p>
         </div>
 
         <div class="container bg-light">
@@ -54,40 +53,32 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <input type="text" id="in" value="5">
+                        <input type="text" id="in" value="5" class="w-100 text-center">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6" style="margin-top: 5px;">
+                    <div class="col" style="margin-top: 5px;">
                         <button onclick="mylogic()" type="button" class="btn btn-warning btn-lg w-100">Enter</button>
                     </div>
-                
-                
-                    <div class="col-6" style="margin-top: 5px;">
-                        <button onclick="reload()" type="button" class="btn btn-warning btn-lg w-100">Reset</button>
-                    </div>
-                </div>
-                
-            </div>
-            
-            
-            
-            <table id="myTable" class="border mx-auto">
-                
-            </table>
-        </div>
-        <footer>
-            <p>All rights reserved &copy; 2020 Nikola Prljic</p>
-        </footer>
 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="src.js"></script>
+                </div>
+
+                <table id="myTable" class="border mx-auto">
+                        <!--Table stuff comes from js-->
+                </table>
+            </div>
+            <footer>
+                <p>All rights reserved &copy; 2020 Nikola Prljic</p>
+            </footer>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="src.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,12 @@
 
 
 function mylogic() {
-    
-    
+    if (document.getElementsByTagName("tbody")[0]) {
+        //alert("GOT THERE");
+        //location.reload();
+        document.getElementById("myTable").innerHTML = "";
+     }
+    // if tbody already exist goes into this if statmant and reset myTable. To solve the problem many Tables.
     
     var a = document.getElementById("in").value;
     try {
@@ -45,14 +49,4 @@ function mylogic() {
     tbl.setAttribute("border", "2");
     console.log(i);
     
-}
-
-
-function reload(){
-    var container = document.getElementById("myTable");
-    var content = container.innerHTML;
-    container.innerHTML= ""; 
-    
-   
-    console.log("Refreshed"); 
 }
